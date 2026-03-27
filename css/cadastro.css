@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #555555;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar p{
+    color: white;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #00ff37;
+}
+.logo{
+    margin-left: auto;
+    font-weight: bold;
+    flex-direction: column;
+    font-size: 25px;
+    color: #00ff37;
+}
+.formulario form{
+    background-color: #00ff37;
+    padding: 20px;
+    border-radius: 15px;    
+    width: 650px
+}
+.formulario input:hover {
+    border: 2px solid #00ff37;
+}
+button {
+    background-color: #00ff37;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    color: black;
+    background-color: #00ff37;
+}   

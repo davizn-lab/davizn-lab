@@ -1,20 +1,16 @@
 body {
-    background-color: green;
+    background-color: #53fb7f;
 }
 
-/* NAVBAR */
 .navbar {
     background-color: #555555;
     padding: 15px;
     border-radius: 15px;
-
     display: flex;
     align-items: center;
     gap: 20px;
-
-    flex-wrap: wrap; /* responsivo */
+    flex-wrap: wrap;
 }
-
 .navbar p {
     color: white;
     font-size: 20px;
@@ -22,26 +18,25 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: #53fb7f;
     font-size: 20px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #00ff37;
+    color: #53fb7f;
 }
 
-/* LOGO */
 .logo {
     margin-left: auto;
-
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+}
 
-    font-size: 25px;
-    font-weight: bold;
-    color: #00ff37;
+.logo img {
+    border-radius: 30px;
+    max-width: 100%;
 }
 
 /* FORMULÁRIO */

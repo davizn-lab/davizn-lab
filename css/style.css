@@ -1,110 +1,115 @@
 body {
-    background-color: antiquewhite;
+    background-color: green;
 }
 
+/* NAVBAR */
 .navbar {
     background-color: #555555;
     padding: 15px;
     border-radius: 15px;
+
     display: flex;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* 🔥 permite quebrar no celular */
+
+    flex-wrap: wrap; /* responsivo */
+}
+
+.navbar p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
 }
 
 .navbar a {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #df8f45;
+    color: #00ff37;
 }
 
+/* LOGO */
 .logo {
     margin-left: auto;
+
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+
+    font-size: 25px;
+    font-weight: bold;
+    color: #00ff37;
 }
 
-.logo img {
-    border-radius: 30px;
-    max-width: 100%; /* 🔥 evita quebrar no celular */
-}
-
-h1 {
+/* FORMULÁRIO */
+.formulario {
     display: flex;
     justify-content: center;
-    text-decoration: underline;
-    text-align: center; /* 🔥 melhora no mobile */
+    margin-top: 40px;
+    padding: 10px;
 }
 
-p {
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: center;
-    font-size: 20px;
-    padding: 0 10px; /* 🔥 não grudar nas bordas */
-}
-
-hr {
+.formulario form {
     background-color: #555555;
-    height: 0.5px;
-}
+    padding: 20px;
+    border-radius: 15px;
 
-.ct {
-    font-family: cursive;
-}
+    width: 100%;
+    max-width: 650px;
 
-/* 🔥 PRINCIPAL RESPONSIVIDADE */
-.ctimg {
-    display: flex;
-    justify-content: center;
-    gap: 75px;
-    flex-wrap: wrap; /* 🔥 faz quebrar no celular */
-}
-
-.item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 150px; /* 🔥 mantém alinhado com imagem */
+    gap: 15px;
 }
 
-.item img {
-    width: 100%; /* 🔥 adapta */
-    height: auto; /* 🔥 mantém proporção */
-    max-width: 150px;
-    aspect-ratio: 1/1; /* 🔥 mantém quadrado */
-    object-fit: cover;
+/* INPUTS */
+.formulario input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.formulario input:hover {
+    border: 2px solid #00ff37;
+}
 
-    width: 100%; /* 🔥 acompanha imagem */
-    max-width: 150px;
-    height: 50px;
+.formulario input:focus {
+    border: 2px solid #00ff37;
+}
 
-    background-color: #555555;
-    color: white;
-    text-decoration: none;
+/* BOTÃO */
+button {
+    background-color: #00ff37;
+    color: black;
+
+    padding: 12px;
+
+    border: none;
     border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #df8f45;
+button:hover {
+    background-color: #00cc2d;
+    color: black;
 }
 
-/* 🔥 AJUSTE EXTRA PARA CELULAR */
+/* RESPONSIVIDADE */
 @media (max-width: 600px) {
-    .ctimg {
-        gap: 30px;
-    }
 
     .navbar {
         justify-content: center;
@@ -112,7 +117,20 @@ hr {
 
     .logo {
         margin-left: 0;
-        justify-content: center;
         width: 100%;
+        justify-content: center;
+    }
+
+    .formulario form {
+        width: 100%;
+    }
+
+    .navbar a,
+    .navbar p {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 22px;
     }
 }

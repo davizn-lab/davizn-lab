@@ -8,9 +8,7 @@ body {
 /* NAVBAR */
 .navbar {
     background-color: #555555;
-
     padding: 15px;
-
     border-radius: 15px;
 
     display: flex;
@@ -24,11 +22,8 @@ body {
 
 .navbar a {
     color: #53fb7f;
-
     font-size: 22px;
-
     text-decoration: none;
-
     font-weight: bold;
 }
 
@@ -49,7 +44,7 @@ body {
 
     border-radius: 30px;
 
-    background-color: white;
+    background-color: #53fb7f;
 
     padding: 5px;
 }
@@ -127,19 +122,19 @@ hr {
     gap: 12px;
 }
 
-/* IMAGENS */
+/* 🔥 IMAGENS IGUAL AO MODELO */
 .item img {
-    width: 170px;
+    width: 180px;
 
-    height: 170px;
+    height: 180px;
 
     object-fit: contain;
 
-    background-color: white;
+    background-color: #53fb7f;
 
     padding: 10px;
 
-    border-radius: 5px;
+    border-radius: 0;
 
     transition: 0.3s;
 }

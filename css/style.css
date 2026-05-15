@@ -11,6 +11,7 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .navbar p {
     color: white;
     font-size: 20px;
@@ -37,6 +38,42 @@ body {
 .logo img {
     border-radius: 30px;
     max-width: 100%;
+}
+
+/* 🔥 CSS DAS IMAGENS */
+.ctimg {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+
+    background-color: #53fb7f;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    transition: 0.3s;
+}
+
+.item img:hover {
+    transform: scale(1.05);
 }
 
 /* FORMULÁRIO */
@@ -127,5 +164,9 @@ button:hover {
 
     .logo {
         font-size: 22px;
+    }
+
+    .ctimg {
+        gap: 30px;
     }
 }

@@ -1,300 +1,101 @@
-body {
-    background-color: #53fb7f;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* NAVBAR */
 .navbar {
     background-color: #555555;
     padding: 15px;
     border-radius: 15px;
-
     display: flex;
     align-items: center;
     gap: 20px;
-
     flex-wrap: wrap;
+}
 
-    margin: 8px;
+.navbar p {
+    color: white;
+    font-size: 20px;
 }
 
 .navbar a {
-    color: #53fb7f;
-    font-size: 22px;
-    text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-size: 20px;
 }
 
 .navbar a:hover {
-    color: white;
-}
-
-/* LOGO */
-.logo {
-    margin-left: auto;
-
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 200px;
-
-    border-radius: 30px;
-
-    background-color: #53fb7f;
-
-    padding: 5px;
-}
-
-/* TITULOS */
-h1 {
-    text-align: center;
-
-    text-decoration: underline;
-
-    font-size: 55px;
-
-    margin-top: 30px;
-
-    color: black;
-
-    font-family: cursive;
-}
-
-h2 {
-    text-align: center;
-
-    text-decoration: underline;
-
-    font-size: 35px;
-
-    font-family: cursive;
-}
-
-/* TEXTO */
-p {
-    text-align: center;
-
-    max-width: 900px;
-
-    margin: auto;
-
-    font-size: 22px;
-
-    line-height: 1.5;
-}
-
-/* LINHA */
-hr {
-    border: none;
-
-    height: 2px;
-
-    background-color: #555555;
-
-    margin-top: 25px;
-}
-
-/* AREA DAS CATEGORIAS */
-.ctimg {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 70px;
-
-    flex-wrap: wrap;
-
-    margin-top: 30px;
-}
-
-/* CARD */
-.item {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 12px;
-}
-
-/* 🔥 IMAGENS IGUAL AO MODELO */
-.item img {
-    width: 180px;
-
-    height: 180px;
-
-    object-fit: contain;
-
-    background-color: #53fb7f;
-
-    padding: 10px;
-
-    border-radius: 0;
-
-    transition: 0.3s;
-}
-
-.item img:hover {
-    transform: scale(1.05);
-}
-
-/* BOTÕES */
-.btn {
-    width: 190px;
-
-    height: 55px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background-color: #555555;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 10px;
-
-    font-size: 28px;
-
-    font-family: cursive;
-
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #444444;
-
     color: #53fb7f;
 }
 
-/* FORMULARIO */
+.logo {
+    margin-left: auto;
+    font-weight: bold;
+    flex-direction: column;
+    font-size: 25px;
+    color: #53fb7f;
+}
+
 .formulario {
     display: flex;
-
     justify-content: center;
-
-    margin-top: 50px;
-
-    padding: 10px;
 }
 
 .formulario form {
-    background-color: #555555;
-
-    padding: 25px;
-
+    background-color: ##53fb7f;
+    padding: 30px; /* 🔥 mais espaço interno */
     border-radius: 15px;
 
     width: 100%;
-
     max-width: 650px;
 
     display: flex;
-
     flex-direction: column;
-
     gap: 15px;
 }
 
 /* INPUTS */
 .formulario input {
-    padding: 12px;
+    width: 100%;
+    padding: 12px; /* 🔥 maior */
+    border-radius: 8px;
+    border: 1px solid #999;
+    outline: none;
+}
 
+/* FOCO */
+.formulario input:focus {
+    border: 2px solid ##53fb7f;
+}
+
+/* BOTÃO */
+button {
+    background-color: #c73a17;
+    color: black;
+    padding: 12px;
     border-radius: 8px;
 
-    border: 2px solid transparent;
+    width: 100%;
+    max-width: 250px;
+    align-self: center;
 
     font-size: 16px;
-
-    outline: none;
-
-    transition: 0.3s;
-}
-
-.formulario input:hover {
-    border: 2px solid #00ff37;
-}
-
-.formulario input:focus {
-    border: 2px solid #00ff37;
-}
-
-/* BOTÃO FORM */
-button {
-    background-color: #00ff37;
-
-    color: black;
-
-    padding: 12px;
-
-    border: none;
-
-    border-radius: 10px;
-
-    font-size: 20px;
-
-    font-weight: bold;
-
     cursor: pointer;
-
-    transition: 0.3s;
 }
 
+/* HOVER */
 button:hover {
-    background-color: #00cc2d;
+    background-color: ##53fb7f;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 700px) {
+/* MOBILE */
+@media (max-width: 600px) {
 
     .navbar {
         justify-content: center;
     }
 
     .logo {
-        width: 100%;
-
-        justify-content: center;
-
         margin-left: 0;
+        width: 100%;
+        text-align: center;
     }
 
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 18px;
-
-        padding: 0 15px;
-    }
-
-    .ctimg {
-        gap: 30px;
-    }
-
-    .item img {
-        width: 150px;
-
-        height: 150px;
-    }
-
-    .btn {
-        width: 160px;
-
-        font-size: 22px;
+    .formulario form {
+        padding: 15px;
     }
 }

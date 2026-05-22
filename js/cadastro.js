@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const nome = document.getElementById("nome").value;
         const email = document.getElementById("email").value;
         const senha = document.getElementById("senha").value;
+        const imagem = document.getElementById("imagem").value;
         const descricao = document.getElementById("descricao").value;
 
         // =========================
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             nome: nome,
             email: email,
             senha: senha,
+            imagem: imagem,
             descricao: descricao
         };
 
@@ -38,12 +40,24 @@ document.addEventListener("DOMContentLoaded", function() {
         const card = document.createElement("div");
         card.classList.add("cardUsuario");
 
-        card.innerHTML = `
-            <h3>${novoUsuario.nome}</h3>
-            <p><strong>Email:</strong> ${novoUsuario.email}</p>
-            <p><strong>Descrição:</strong> ${novoUsuario.descricao}</p>
-        `;
+       card.innerHTML = `
+    <h3>${novoUsuario.nome}</h3>
+    <p><strong>Email:</strong> ${novoUsuario.email}</p>
+    <p><strong>Senha:</strong> ${novoUsuario.senha}</p>
 
+    <img 
+        src="${novoUsuario.imagem}" 
+        alt="Imagem do usuário"
+        style="
+            width: 200px;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        "
+    >
+
+    <p><strong>Descrição:</strong> ${novoUsuario.descricao}</p>
+`;
         lista.appendChild(card);
 
         // limpar formulário
